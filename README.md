@@ -31,3 +31,13 @@ Some of simulation parameters can be changed:
 	* and more.
 
 See screenshot.
+
+== Requirements ==
+
+Code::Blocks is required to compile this project painlessly.
+
+Libraries used:
+
+gsl 1.16-1 -- The GNU Scientific Library (GSL) is a modern numerical library for C and C++ programmers
+gtk3 3.12.1-1 -- Object-based multi-platform GUI toolkit (v3)
+plplot 5.9.11-1 -- A cross-platform software package for creating scientific plots
