@@ -1,0 +1,30 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 13.04.2 ] */
+
+/* [wxMaxima: input   start ] */
+R1: 0.932;
+alpha: 0.003862;
+T2: 20;
+T1: 120;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+dT: T2 - T1;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+R2: R1 * (1 + alpha * dT);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+E: kmPhi * omega;
+i2 = i1 + ((Ua - i2 * Ra - E)/La) * dt;
+solve(%, i2);
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+−(dt*omega*kmPhi−dt*Ua−i1*La)/(dt*Ra+La);
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DC_motor" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/DC_motor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DC_motor" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=gnu99" />
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags gtk+-3.0 plplotd`" />
+		</Compiler>
+		<Linker>
+			<Add option="-rdynamic" />
+			<Add option="`pkg-config --libs gtk+-3.0 plplotd`" />
+			<Add library="gsl" />
+			<Add library="gslcblas" />
+			<Add library="m" />
+		</Linker>
+		<Unit filename="DC_motor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="plot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plot.h" />
+		<Unit filename="temp.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="util.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
